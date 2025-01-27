@@ -1,0 +1,68 @@
+<!--
+  ~ @package CS soft Editable Checkout plugin
+
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="summary" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="cart_items" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="details" xsi:type="array">
+                                                            <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details</item>
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="thumbnail" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/thumbnail</item>
+                                                                    <item name="displayArea" xsi:type="string">before_details</item>
+                                                                </item>
+                                                                <item name="subtotal" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/subtotal</item>
+                                                                    <item name="displayArea" xsi:type="string">after_details</item>
+                                                                </item>
+                                                                <item name="message" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/message</item>
+                                                                    <item name="displayArea" xsi:type="string">item_message</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                        <item name="newdetails" xsi:type="array">
+                                                            <item name="component" xsi:type="string">CSSoft_Editproductcheckout/js/view/summary/item/details</item>
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="thumbnail" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/thumbnail</item>
+                                                                    <item name="displayArea" xsi:type="string">before_details</item>
+                                                                </item>
+                                                                <item name="subtotal" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/subtotal</item>
+                                                                    <item name="displayArea" xsi:type="string">after_details</item>
+                                                                </item>
+                                                                <item name="message" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/summary/item/details/message</item>
+                                                                    <item name="displayArea" xsi:type="string">item_message</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+            <referenceBlock name="top.search" remove="true"/>
+        </referenceBlock>
+        <referenceBlock name="minicart" remove="true"/>
+    </body>
+</page>

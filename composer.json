@@ -1,0 +1,30 @@
+{
+    "name": "cssoft/editproductcheckout",
+    "description": "A Magento 2 extension that allows users to delete, update the quantity, or change the item variant in the checkout cart.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "cssoft"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": "103.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CSSoft\\editproductcheckout\\": "src/"
+        },
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://repo.magento.com"
+        }
+    ]
+}

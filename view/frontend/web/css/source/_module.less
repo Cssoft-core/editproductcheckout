@@ -1,0 +1,29 @@
+.minicart-items {
+    .update-cart-item {
+        margin-left: -1px !important;
+    }
+}
+.opc-block-summary {
+    .product-item {
+        .subtotal {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@-moz-document url-prefix() {
+    .minicart-items {
+        .update-cart-item {
+            margin-left: 1px !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .minicart-items {
+            .update-cart-item {
+                margin-left: -1px !important;
+            }
+        }
+    }
+
+}
